@@ -1,4 +1,10 @@
 Ioanabianca::Application.routes.draw do
+  resources :companies
+
+  resources :educations
+
+  resources :experiences
+
   resources :cvs
 
   resources :users

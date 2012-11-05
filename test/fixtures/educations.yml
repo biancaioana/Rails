@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  activities: MyText
+  degree: MyString
+  end_time: 2012-11-05
+  institution: MyString
+  start_time: 2012-11-05
+
+two:
+  activities: MyText
+  degree: MyString
+  end_time: 2012-11-05
+  institution: MyString
+  start_time: 2012-11-05
