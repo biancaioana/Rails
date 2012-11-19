@@ -9,6 +9,8 @@ Ioanabianca::Application.routes.draw do
   resources :cvs
 
   resources :users
+  
+  resources :sessions, only: [:new, :create, :destroy] 
 
   root to: 'static_pages#home'
 
@@ -16,6 +18,8 @@ Ioanabianca::Application.routes.draw do
   match '/contact', to: 'static_pages#contact'
   match '/signup', to: 'users#new'
 
+  match '/sign_in', to: 'sessions#new'
+  match '/sign_out', to: 'sessions#destroy', :via => :delete
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

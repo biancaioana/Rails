@@ -1,0 +1,14 @@
+<!-- the user variable created upon submitting in the Sign up form -->
+<% if object.errors.any? %>
+..
+    <!-- predefined Bootstrap classed for error handling -->
+    <div class="alert alert-error">
+       There are <%= pluralize(@user.errors.cout, "error") %>
+    </div>
+        <ul>
+        <!-- for all errors found insert a line with the error message-->
+        <% object.errors.full_message.each do |msg| %>
+        <li><%= msg %> </li>
+        <% end %>
+        </ul>
+<% end %>        
